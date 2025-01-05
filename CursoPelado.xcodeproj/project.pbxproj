@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F8809A82D2AE85C007C63E5 /* GFAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8809A72D2AE85C007C63E5 /* GFAlertVC.swift */; };
+		9F8809AA2D2AE889007C63E5 /* GFBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8809A92D2AE889007C63E5 /* GFBodyLabel.swift */; };
+		9F8809AC2D2AE8B3007C63E5 /* GFTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8809AB2D2AE8B3007C63E5 /* GFTitleLabel.swift */; };
+		9F8809AE2D2AE8CF007C63E5 /* UIViewController+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8809AD2D2AE8CF007C63E5 /* UIViewController+ext.swift */; };
 		9FD077A02D288FAA00EA8E7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD0779F2D288FAA00EA8E7E /* AppDelegate.swift */; };
 		9FD077A22D288FAA00EA8E7E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD077A12D288FAA00EA8E7E /* SceneDelegate.swift */; };
 		9FD077A92D288FAC00EA8E7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FD077A82D288FAC00EA8E7E /* Assets.xcassets */; };
@@ -39,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F8809A72D2AE85C007C63E5 /* GFAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertVC.swift; sourceTree = "<group>"; };
+		9F8809A92D2AE889007C63E5 /* GFBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFBodyLabel.swift; sourceTree = "<group>"; };
+		9F8809AB2D2AE8B3007C63E5 /* GFTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTitleLabel.swift; sourceTree = "<group>"; };
+		9F8809AD2D2AE8CF007C63E5 /* UIViewController+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ext.swift"; sourceTree = "<group>"; };
 		9FD0779C2D288FAA00EA8E7E /* CursoPelado.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CursoPelado.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD0779F2D288FAA00EA8E7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FD077A12D288FAA00EA8E7E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +123,10 @@
 				9FD077D72D2A03FF00EA8E7E /* FollowersListVCViewController.swift */,
 				9FD077D12D29E14C00EA8E7E /* FavoritesListVSViewController.swift */,
 				9FD077D52D29E99E00EA8E7E /* GFTextField.swift */,
+				9F8809AB2D2AE8B3007C63E5 /* GFTitleLabel.swift */,
+				9F8809AD2D2AE8CF007C63E5 /* UIViewController+ext.swift */,
+				9F8809A72D2AE85C007C63E5 /* GFAlertVC.swift */,
+				9F8809A92D2AE889007C63E5 /* GFBodyLabel.swift */,
 			);
 			path = CursoPelado;
 			sourceTree = "<group>";
@@ -266,12 +278,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F8809A82D2AE85C007C63E5 /* GFAlertVC.swift in Sources */,
+				9F8809AE2D2AE8CF007C63E5 /* UIViewController+ext.swift in Sources */,
 				9FD077D62D29E99E00EA8E7E /* GFTextField.swift in Sources */,
 				9FD077A02D288FAA00EA8E7E /* AppDelegate.swift in Sources */,
 				9FD077D82D2A03FF00EA8E7E /* FollowersListVCViewController.swift in Sources */,
+				9F8809AA2D2AE889007C63E5 /* GFBodyLabel.swift in Sources */,
 				9FD077D42D29E77A00EA8E7E /* GFButton.swift in Sources */,
 				9FD077D22D29E14C00EA8E7E /* FavoritesListVSViewController.swift in Sources */,
 				9FD077A22D288FAA00EA8E7E /* SceneDelegate.swift in Sources */,
+				9F8809AC2D2AE8B3007C63E5 /* GFTitleLabel.swift in Sources */,
 				9FD077D02D29E0F400EA8E7E /* SearchVCViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
