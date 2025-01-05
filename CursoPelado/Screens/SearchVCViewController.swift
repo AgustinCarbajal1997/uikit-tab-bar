@@ -26,7 +26,7 @@ class SearchVCViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.isNavigationBarHidden = true // esconde la barra de navegacion
+        navigationController?.setNavigationBarHidden(true, animated: true) // esconde la barra de navegacion
     }
 
     func configureLogoImageView(){
@@ -44,7 +44,11 @@ class SearchVCViewController: UIViewController {
     
     @objc func pushFollowersListVC(){
         guard isUsernameEntered else {
-                presentGFAlertOnMainThread(title: "Ha ocurrido un error", message: "Por favor introduzca el nombre de un usuario para continuar con la busqueda", buttonTitle: "OK")
+            presentGFAlertOnMainThread(
+                title: "Ha ocurrido un error",
+                message: "Por favor introduzca el nombre de un usuario para continuar con la busqueda",
+                buttonTitle: "OK"
+            )
             return
             
         }
