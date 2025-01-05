@@ -18,6 +18,7 @@
 		9FD077D22D29E14C00EA8E7E /* FavoritesListVSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD077D12D29E14C00EA8E7E /* FavoritesListVSViewController.swift */; };
 		9FD077D42D29E77A00EA8E7E /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD077D32D29E77A00EA8E7E /* GFButton.swift */; };
 		9FD077D62D29E99E00EA8E7E /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD077D52D29E99E00EA8E7E /* GFTextField.swift */; };
+		9FD077D82D2A03FF00EA8E7E /* FollowersListVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD077D72D2A03FF00EA8E7E /* FollowersListVCViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		9FD077D12D29E14C00EA8E7E /* FavoritesListVSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVSViewController.swift; sourceTree = "<group>"; };
 		9FD077D32D29E77A00EA8E7E /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
 		9FD077D52D29E99E00EA8E7E /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
+		9FD077D72D2A03FF00EA8E7E /* FollowersListVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersListVCViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				9FD077AD2D288FAC00EA8E7E /* Info.plist */,
 				9FD077D32D29E77A00EA8E7E /* GFButton.swift */,
 				9FD077CF2D29E0F400EA8E7E /* SearchVCViewController.swift */,
+				9FD077D72D2A03FF00EA8E7E /* FollowersListVCViewController.swift */,
 				9FD077D12D29E14C00EA8E7E /* FavoritesListVSViewController.swift */,
 				9FD077D52D29E99E00EA8E7E /* GFTextField.swift */,
 			);
@@ -265,6 +268,7 @@
 			files = (
 				9FD077D62D29E99E00EA8E7E /* GFTextField.swift in Sources */,
 				9FD077A02D288FAA00EA8E7E /* AppDelegate.swift in Sources */,
+				9FD077D82D2A03FF00EA8E7E /* FollowersListVCViewController.swift in Sources */,
 				9FD077D42D29E77A00EA8E7E /* GFButton.swift in Sources */,
 				9FD077D22D29E14C00EA8E7E /* FavoritesListVSViewController.swift in Sources */,
 				9FD077A22D288FAA00EA8E7E /* SceneDelegate.swift in Sources */,
