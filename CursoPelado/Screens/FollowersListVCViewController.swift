@@ -20,6 +20,7 @@ class FollowersListVCViewController: UIViewController {
     var dataSource: UICollectionViewDiffableDataSource<Section, Follower>! // tiene que conformarse a hashable
     var page: Int = 1
     var hasMoreFollowers = true
+    var isSearching = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -119,6 +120,15 @@ extension FollowersListVCViewController: UICollectionViewDelegate {
             getFollowers(username: username, page: page)
         }
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let activeArray = isSearching ? filteredFollowers : followers
+        let follower = activeArray[indexPath.item]
+        let destVC = UserInfoVC()
+        destVC.username = follower.login
+        let navController = UINavigationController(rootViewController: destVC)
+        present(navController, animated: true) // si pasamos solo destVC no vamos a poder usar el DONE para cerrar, solo el gesto, pero si pasamos el navController si vamos a poder una el boton del header
+    }
 }
 
 extension FollowersListVCViewController: UISearchResultsUpdating, UISearchBarDelegate {
@@ -126,11 +136,13 @@ extension FollowersListVCViewController: UISearchResultsUpdating, UISearchBarDel
         guard let filter = searchController.searchBar.text, !filter.isEmpty else {
             return
         }
+        isSearching = true
         filteredFollowers = followers.filter { $0.login.lowercased().contains(filter.lowercased()) }
         updateData(on: filteredFollowers)
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        isSearching = false
         updateData(on: followers)
     }
 }

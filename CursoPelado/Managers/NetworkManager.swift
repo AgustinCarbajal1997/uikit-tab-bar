@@ -42,4 +42,42 @@ class NetworkManager { // SIngleton
         }
         task.resume()
     }
+    
+    func getUserInfo(for username: String, completed: @escaping(Result<User, GFError>) -> Void) {
+        let endpoint    = baseURL + "\(username)"
+        guard let url = URL(string: endpoint) else {
+            completed(.failure(.invalidUsername))
+            return
+        }
+        let task = URLSession.shared.dataTask(with: url) {
+            (data, response, error) in
+            if let _ = error {
+                completed(.failure(.unableToTcomplete))
+                return
+            }
+            
+            // si la respuesta no es nil y el status es igual a 200
+            guard let response =  response as? HTTPURLResponse, response.statusCode == 200 else {
+                completed(.failure(.invalidResponse))
+                return
+            }
+            
+            guard let data = data else {
+                completed(.failure(.invalidData))
+                return
+            }
+            
+            do {
+                let decoder = JSONDecoder()
+                decoder.keyDecodingStrategy = .convertFromSnakeCase  //le estamos diciendo que convierta desde snake case
+                let user = try decoder.decode(User.self, from: data)
+                print(user)
+                completed(.success(user))
+            } catch let error {
+                print(error)
+                completed(.failure(.invalidData))
+            }
+        }
+        task.resume()
+    }
 }

@@ -25,4 +25,10 @@ class GFButton: UIButton {
         translatesAutoresizingMaskIntoConstraints = false
     }
     
+    
+    func set(backgroundColor: UIColor, title: String) { // lo ponemos con set tambien pq aunque lo tenemos en el init, muchas veces lo podemos inicializar sin pasar background color y title y dps sobre la marcha podemos necesitar cambiar los valores
+        self.backgroundColor = backgroundColor
+        setTitle(title, for: .normal)
+    }
+    
 }
