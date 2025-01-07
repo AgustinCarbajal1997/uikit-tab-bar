@@ -41,6 +41,8 @@
 		9FFDAE7B2D2CC2C8002B7D25 /* GFFollowerItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFDAE7A2D2CC2C8002B7D25 /* GFFollowerItemVC.swift */; };
 		9FFDAE7E2D2D6194002B7D25 /* Date+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFDAE7D2D2D6194002B7D25 /* Date+ext.swift */; };
 		9FFDAE802D2D61C8002B7D25 /* String+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFDAE7F2D2D61C8002B7D25 /* String+ext.swift */; };
+		9FFDAE822D2D8A22002B7D25 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFDAE812D2D8A22002B7D25 /* PersistenceManager.swift */; };
+		9FFDAE842D2D94D5002B7D25 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFDAE832D2D94D5002B7D25 /* FavoriteCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +101,8 @@
 		9FFDAE7A2D2CC2C8002B7D25 /* GFFollowerItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFFollowerItemVC.swift; sourceTree = "<group>"; };
 		9FFDAE7D2D2D6194002B7D25 /* Date+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ext.swift"; sourceTree = "<group>"; };
 		9FFDAE7F2D2D61C8002B7D25 /* String+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ext.swift"; sourceTree = "<group>"; };
+		9FFDAE812D2D8A22002B7D25 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		9FFDAE832D2D94D5002B7D25 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				9F8809B92D2AF1C9007C63E5 /* NetworkManager.swift */,
+				9FFDAE812D2D8A22002B7D25 /* PersistenceManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -192,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				9F8809BF2D2B172E007C63E5 /* FollowerCell.swift */,
+				9FFDAE832D2D94D5002B7D25 /* FavoriteCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -458,6 +464,7 @@
 				9FFDAE7B2D2CC2C8002B7D25 /* GFFollowerItemVC.swift in Sources */,
 				9F8809AA2D2AE889007C63E5 /* GFBodyLabel.swift in Sources */,
 				9F8809C02D2B172E007C63E5 /* FollowerCell.swift in Sources */,
+				9FFDAE842D2D94D5002B7D25 /* FavoriteCell.swift in Sources */,
 				9FFDAE6F2D2CA30B002B7D25 /* GFUserInfoHeaderVC.swift in Sources */,
 				9F8809BD2D2B0C55007C63E5 /* ErrorMessage.swift in Sources */,
 				9FFDAE802D2D61C8002B7D25 /* String+ext.swift in Sources */,
@@ -465,6 +472,7 @@
 				9F8809B52D2AEE44007C63E5 /* Follower.swift in Sources */,
 				9FFDAE712D2CA39E002B7D25 /* GFSecondaryTitleLabel.swift in Sources */,
 				9FD077D22D29E14C00EA8E7E /* FavoritesListVSViewController.swift in Sources */,
+				9FFDAE822D2D8A22002B7D25 /* PersistenceManager.swift in Sources */,
 				9FFDAE752D2CB449002B7D25 /* GFItemInfoVIew.swift in Sources */,
 				9F8809BA2D2AF1C9007C63E5 /* NetworkManager.swift in Sources */,
 				9FD077A22D288FAA00EA8E7E /* SceneDelegate.swift in Sources */,
