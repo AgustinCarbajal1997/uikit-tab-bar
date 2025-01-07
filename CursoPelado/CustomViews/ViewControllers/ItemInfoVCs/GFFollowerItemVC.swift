@@ -19,4 +19,8 @@ class GFFollowerItemVC: GFItemInfoVC { // estamos heredando todo GFItemInfoVC
         itemInfoViewTwo.set(itemInfoType: .following, widthCount: user.following)
         actionButton.set(backgroundColor: .systemGreen, title: "Get Followers")
     }
+    
+    override func actionButtonTapped() {
+        delegate.didTapGetFollowers(for: user) // fijarse la cadena de delegates en userInfoVC y FollowerListVCViewController
+    }
 }

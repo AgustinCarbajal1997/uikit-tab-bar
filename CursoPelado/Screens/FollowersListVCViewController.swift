@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol FollowerListVCDelegate: AnyObject {
+    func didRequestFollowers(for username: String)
+}
+
 class FollowersListVCViewController: UIViewController {
     
     enum Section {
@@ -126,6 +130,7 @@ extension FollowersListVCViewController: UICollectionViewDelegate {
         let follower = activeArray[indexPath.item]
         let destVC = UserInfoVC()
         destVC.username = follower.login
+        destVC.delegate = self
         let navController = UINavigationController(rootViewController: destVC)
         present(navController, animated: true) // si pasamos solo destVC no vamos a poder usar el DONE para cerrar, solo el gesto, pero si pasamos el navController si vamos a poder una el boton del header
     }
@@ -144,5 +149,18 @@ extension FollowersListVCViewController: UISearchResultsUpdating, UISearchBarDel
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         isSearching = false
         updateData(on: followers)
+    }
+}
+
+extension FollowersListVCViewController: FollowerListVCDelegate {
+    func didRequestFollowers(for username: String) {
+        //get followers for that user
+        self.username = username
+        title = username
+        page = 1
+        followers.removeAll() //limpio array
+        filteredFollowers.removeAll()
+        collectionView.setContentOffset(.zero, animated: true)
+        getFollowers(username: username, page: page)
     }
 }

@@ -19,4 +19,8 @@ class GFRepoItemVC: GFItemInfoVC { // estamos heredando todo GFItemInfoVC
         itemInfoViewTwo.set(itemInfoType: .gists, widthCount: user.publicGists)
         actionButton.set(backgroundColor: .systemPurple, title: "GithubProfile")
     }
+    
+    override func actionButtonTapped() { // hacemos override de la funcion de la clase padre
+        delegate.didTapGithubProfile(for: user)
+    }
 }

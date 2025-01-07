@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import SafariServices
 // quiere decir que cualquier variable que este en el fichero puede ser untilizada
 fileprivate var containerView: UIView!
 
@@ -53,5 +53,11 @@ extension UIViewController{
         let emptyStateView = GFEmptyState(message: message)
         emptyStateView.frame = view.bounds
         view.addSubview(emptyStateView)
+    }
+    
+    func presentSafariVC(with url: URL){
+        let safariVC = SFSafariViewController(url: url)
+        safariVC.preferredBarTintColor = .systemGreen
+        present(safariVC, animated: true)
     }
 }
